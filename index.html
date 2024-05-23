@@ -2,14 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-c9db6b34.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-10cb7c31.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-a088063d.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-1c721a98.css">
   </head>
   <body>
+    <section class="section">
+      <div class="container">
+        <form class="form js-form">
+          <input
+            class="input"
+            type="text"
+            name="search"
+            placeholder="Enter your query..."
+          />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+
+        <ul class="gallery-list js-gallery-list"></ul>
+        <div class="loader visually-hidden"></div>
+      </div>
+    </section>
     
   </body>
 </html>
