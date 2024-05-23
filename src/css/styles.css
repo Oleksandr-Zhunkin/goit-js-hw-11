@@ -21,6 +21,22 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* #region Input section */
 .form {
   box-sizing: border-box;
   text-align: center;
@@ -64,7 +80,9 @@
 .search-btn:focus {
   background-color: #6c8cff;
 }
+/* #endregion */
 
+/* #region Output section */
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
@@ -74,11 +92,12 @@
 
 .gallery {
   border: 1px solid #808080;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .gallery img {
   height: 200px;
   width: 360px;
-  overflow: hidden;
 }
 .info {
   display: flex;
@@ -101,20 +120,9 @@ p {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-/* #region Loader */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+/* #endregion */
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+/* #region Loader */
 
 .loader {
   position: fixed;
